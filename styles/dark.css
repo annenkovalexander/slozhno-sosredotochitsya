@@ -9,4 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-color: #000028;
+  --main-header-color: #db00ff;
+  --main-header-shadow-color: #ff0070;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --menu-color: #ff0070;
+  --subtitle-color: #000028;
+  --main-section-title-color: #ff0070;
+  --main-section-subtitle-color: #000028;
+  --main-section-mintitle-color: #000028;
+  --rec-text: "REC"
 }

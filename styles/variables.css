@@ -2,3 +2,35 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --background-color: #000028;
+    --main-header-color: #db00ff;
+    --main-header-shadow-color: #ff0070;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --menu-color: #ff0070;
+    --subtitle-color: #000028;
+    --main-section-title-color: #ff0070;
+    --main-section-subtitle-color: #000028;
+    --main-section-mintitle-color: #000028;
+    --rec-text: "REC"
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --background-color: #fff1f7;
+    --text-color: #353430;
+    --main-header-color: #ffc2e6;
+    --main-header-shadow-color: #ff8dcb;
+    --accent-color: #ff8dcb;
+    --menu-color: #353430;
+    --subtitle-color: #353430;
+    --main-section-title-color: #353430;
+    --main-section-subtitle-color: #353430;
+    --main-section-mintitle-color: #353430;
+    --rec-text: ""
+  }
+}
