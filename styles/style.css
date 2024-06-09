@@ -9,6 +9,7 @@
   margin: auto;
   container-type: inline-size;
   box-sizing: border-box;
+  background-attachment: fixed;
 }
 
 @container (width <= 375px){
@@ -23,9 +24,7 @@
     gap: 60px;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    background-attachment: fixed;
     z-index: 1;
-    max-block-size: 685px;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
   }
@@ -75,12 +74,12 @@
     z-index: -1;
   }
 
-  .header::after{
+  .header::after {
     top: 10px;
   }
 
   .footer::after,
-  .header::after{
+  .header::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -105,7 +104,7 @@
     top: 10px;
   }
 
-  .header__rec::before{
+  .header__rec::before {
     content: var(--rec-text);
     position: absolute;
     font-family: 'IBM Plex Mono', sans-serif;
@@ -116,7 +115,7 @@
     color: var(--accent-color);
   }
 
-  .theme_dark .header__rec::after{
+  .theme_dark .header__rec::after {
     content: "";
     position: absolute;
     left: 41px;
@@ -128,7 +127,7 @@
     border-right: 1px solid var(--accent-color);
   }
 
-   @media (prefers-color-scheme: dark){
+   @media (prefers-color-scheme: dark) {
     .theme_auto .header__rec::after{
       content: "";
       position: absolute;
@@ -325,10 +324,11 @@
     grid-row-gap: 164px;
     grid-template-columns:  1fr 2fr;
     grid-template-rows: auto auto auto;
-    background-attachment: fixed;
     z-index: 1;
-    max-block-size: 1024px;
-    margin-inline-end: 20px;
+    height: 100%;
+    padding-inline-end: 20px;
+    object-fit: fill;
+    object-position: center;
   }
 
   .theme_dark .header {
@@ -342,7 +342,7 @@
     color: var(--text-color);
   }
 
-  @media(prefers-color-scheme:dark){
+  @media(prefers-color-scheme:dark) {
     .theme_auto .header {
       background-image: url('../images/cover-image-dark.png');
       background-repeat: no-repeat;
@@ -376,12 +376,13 @@
     z-index: -1;
   }
 
-  .header::after{
+  .header::after {
     top: 20px;
+    right: 20px;
   }
 
   .footer::after,
-  .header::after{
+  .header::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -402,11 +403,11 @@
 
   .header__rec {
     position: absolute;
-    right: 60px;
+    right: 80px;
     top: 20px;
   }
 
-  .header__rec::before{
+  .header__rec::before {
     content: var(--rec-text);
     position: absolute;
     font-family: 'IBM Plex Mono', sans-serif;
@@ -417,7 +418,7 @@
     color: var(--accent-color);
   }
 
-  .theme_dark .header__rec::after{
+  .theme_dark .header__rec::after {
     content: "";
     position: absolute;
     left: 41px;
@@ -429,7 +430,7 @@
     border-right: 1px solid var(--accent-color);
   }
 
-   @media (prefers-color-scheme: dark){
+   @media (prefers-color-scheme: dark) {
     .theme_auto .header__rec::after{
       content: "";
       position: absolute;
@@ -541,7 +542,7 @@
     margin-block-end: 20px;
   }
 
-  .main__section-item:has(.main__section-item-mintitle){
+  .main__section-item:has(.main__section-item-mintitle) {
     margin-block-start: 10px;
   }
 
@@ -566,7 +567,7 @@
     grid-column-end: span 1;
   }
 
-  .main__section:nth-child(2) .main__section-list{
+  .main__section:nth-child(2) .main__section-list {
     grid-column-start: 1;
     grid-column-end: span 3;
   }
@@ -629,19 +630,19 @@
     padding-inline-end: 10px;
   }
 
-  .main__section-images img{
+  .main__section-images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
   }
 
-  .main__section-images img:nth-child(1){
+  .main__section-images img:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: span 2;
   }
 
-  .main__section-images img:nth-child(2){
+  .main__section-images img:nth-child(2) {
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: span 2;
@@ -663,7 +664,7 @@
   }
   
 
-  .main__section:has(.main__section-images) .main__section-subtitle{
+  .main__section:has(.main__section-images) .main__section-subtitle {
     grid-column-start: 1;
     grid-column-end: span 3;
     margin-block-end: 20px;

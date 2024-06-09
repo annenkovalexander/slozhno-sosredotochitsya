@@ -15,7 +15,7 @@
     --main-section-title-color: #ff0070;
     --main-section-subtitle-color: #000028;
     --main-section-mintitle-color: #000028;
-    --rec-text: "REC"
+    --rec-text: "REC";
   }
 }
 
@@ -31,6 +31,6 @@
     --main-section-title-color: #353430;
     --main-section-subtitle-color: #353430;
     --main-section-mintitle-color: #353430;
-    --rec-text: ""
+    --rec-text: "";
   }
 }
