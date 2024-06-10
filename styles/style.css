@@ -5,8 +5,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
-  max-inline-size: 1024px;
-  margin: 0 auto;
+  max-inline-size: 375px;
   container-type: inline-size;
   box-sizing: border-box;
   background-attachment: fixed;
@@ -21,7 +20,7 @@
   .header {
     display: grid;
     position: relative;
-    gap: 60px;
+    gap: 70px;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     z-index: 1;
@@ -49,6 +48,10 @@
       background-position: center;
       background-size: cover;
     }
+  }
+
+  .header::before {
+    bottom: 10px;
   }
 
   .footer::before {
@@ -142,6 +145,11 @@
     }
    } 
 
+  .header__theme-menu {
+    place-self: center end;
+    margin-block-start: 75px;
+  }
+
   .header__theme-menu-list {
     display: block;
     justify-self: end;
@@ -163,7 +171,6 @@
     text-shadow: 4px 4px 0px var(--main-header-shadow-color);
     place-self: center end;
     text-align: start;
-    margin-block-start: 10px;
   }
 
   .header__theme-menu-button {
@@ -184,17 +191,14 @@
     height: 25px;
   }
 
-  .header__theme-menu {
-    place-self: center end;
-    margin-block-start: 76px;
-  }
+
 
   .header__main-subtitle {
     inline-size: 100%;
     background-color: var(--accent-color);
     color: var(--subtitle-color);
-    margin-block-start: -7px;
-    margin-block-end: 56px;
+    margin-block-start: -15px;
+    margin-block-end: 85px;
   }
 
   .header__main-paragraph {
@@ -232,7 +236,7 @@
     inline-size: 100%;
     padding-inline-start: 10px;
     padding-inline-end: 10px;
-    margin-block-start: 50px;
+    margin-block-start: 40px;
     margin-block-end: 20px;
   }
   .main__section-subtitle,
