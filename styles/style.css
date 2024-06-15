@@ -6,7 +6,6 @@
   flex-direction: column;
   background-color: var(--background-color);
   container-type: inline-size;
-  max-inline-size: 1024px;
   box-sizing: border-box;
   background-attachment: fixed;
 }
