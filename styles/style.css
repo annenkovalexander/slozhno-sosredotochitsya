@@ -712,7 +712,7 @@
   }
 }
 
-/* @container ( width > 768px) {
+@container ( width > 768px) {
 
   a {
     text-shadow: 1.3px 1.3px 0px var(--main-header-shadow-color);
@@ -1128,4 +1128,4 @@
     top: 2.8%;
     right: 1.2%;
   }
-} */
+}
