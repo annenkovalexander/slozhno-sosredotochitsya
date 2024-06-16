@@ -1,0 +1,1 @@
+git@github.com:annenkovalexander/slozhno-sosredotochitsya.git
