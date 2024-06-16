@@ -857,13 +857,8 @@
   }
 
   .header__theme-menu-item {
-    place-self: start;
-    text-align: start;
-  }
-
-  .header__theme-menu-item:last-of-type {
-    margin-block-start: -5px;
-    margin-inline-start: -11px;
+    place-self: center;
+    text-align: center;
   }
 
   .header__main-title {
