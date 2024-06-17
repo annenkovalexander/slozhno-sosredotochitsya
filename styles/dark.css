@@ -20,4 +20,44 @@
   --main-section-subtitle-color: #000028;
   --main-section-mintitle-color: #000028;
   --rec-text: "REC";
+
+  background-image: url('../images/cover-image-dark.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+@media(prefers-color-scheme:dark) {
+  .theme_auto.page {
+    background-image: url('../images/cover-image-dark.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.theme_dark .header__rec::after {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 6px;
+  inline-size: 12px;
+  block-size: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme_auto .header__rec::after {
+    content: "";
+    position: absolute;
+    left: 41px;
+    top: 6px;
+    inline-size: 12px;
+    block-size: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+ } 

@@ -35,10 +35,10 @@ button:hover {
 button:focus {
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--menu-color);
   width: 70px;
   height: 25px;
-  color: var(--accent-color);
+  color: var(--menu-color);
 }
 
 @container (width <= 375px) {
@@ -54,27 +54,6 @@ button:focus {
     min-block-size: 668px;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-  }
-
-  .theme_dark .header {
-    background-image: url('../images/cover-image-dark.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .theme_light .header {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-
-  @media(prefers-color-scheme:dark) {
-    .theme_auto .header {
-      background-image: url('../images/cover-image-dark.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
   }
 
   .header::before {
@@ -100,7 +79,7 @@ button:focus {
       var(--menu-color), var(--menu-color)
     );
     background-repeat: no-repeat;
-    background-size: 7% 1px, 1px 4%;
+    background-size: 7% 1px, 1px 2.4%;
     background-position: left bottom, left bottom;
     z-index: -1;
   }
@@ -124,7 +103,7 @@ button:focus {
       var(--menu-color), var(--menu-color)
     );
     background-repeat: no-repeat;
-    background-size: 7% 1px, 1px 3.5%;
+    background-size: 7% 1px, 1px 2.4%;
     background-position: right top, right top;
     z-index: -1;
   }
@@ -145,32 +124,6 @@ button:focus {
     text-align: center;
     color: var(--accent-color);
   }
-
-  .theme_dark .header__rec::after {
-    content: "";
-    position: absolute;
-    left: 41px;
-    top: 6px;
-    inline-size: 12px;
-    block-size: 12px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-   @media (prefers-color-scheme: dark) {
-    .theme_auto .header__rec::after {
-      content: "";
-      position: absolute;
-      left: 41px;
-      top: 6px;
-      inline-size: 12px;
-      block-size: 12px;
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      border-right: 1px solid var(--accent-color);
-    }
-   } 
 
   .header__theme-menu {
     place-self: center end;
@@ -356,27 +309,6 @@ button:focus {
     height: 100vh;
     padding-inline-end: 20px;
   }
-
-  .theme_dark .header {
-    background-image: url('../images/cover-image-dark.png');
-    object-fit: fill;
-    object-position: center;
-  }
-
-  .theme_light .header {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-
-  @media(prefers-color-scheme:dark) {
-    .theme_auto .header {
-      background-image: url('../images/cover-image-dark.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
   
   .footer::before,
   .header::before {
@@ -444,32 +376,6 @@ button:focus {
     text-align: center;
     color: var(--accent-color);
   }
-
-  .theme_dark .header__rec::after {
-    content: "";
-    position: absolute;
-    left: 41px;
-    top: 6px;
-    inline-size: 12px;
-    block-size: 12px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-   @media (prefers-color-scheme: dark) {
-    .theme_auto .header__rec::after {
-      content: "";
-      position: absolute;
-      left: 41px;
-      top: 6px;
-      inline-size: 12px;
-      block-size: 12px;
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      border-right: 1px solid var(--accent-color);
-    }
-   } 
 
   .header__theme-menu {
     grid-column-start: 2;
@@ -753,26 +659,6 @@ button:focus {
     object-position: center;
   }
 
-  .theme_dark .header {
-    background-image: url('../images/cover-image-dark.png');
-    object-fit: fill;
-    object-position: center;
-  }
-
-  .theme_light .header {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-
-  @media(prefers-color-scheme:dark) {
-    .theme_auto .header {
-      background-image: url('../images/cover-image-dark.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-  
   .footer::before,
   .header::before {
     content: "";
@@ -839,32 +725,6 @@ button:focus {
     text-align: center;
     color: var(--accent-color);
   }
-
-  .theme_dark .header__rec::after {
-    content: "";
-    position: absolute;
-    left: 41px;
-    top: 6px;
-    inline-size: 12px;
-    block-size: 12px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-   @media (prefers-color-scheme: dark) {
-    .theme_auto .header__rec::after {
-      content: "";
-      position: absolute;
-      left: 41px;
-      top: 6px;
-      inline-size: 12px;
-      block-size: 12px;
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      border-right: 1px solid var(--accent-color);
-    }
-   } 
 
   .header__theme-menu-list {
     display: grid;

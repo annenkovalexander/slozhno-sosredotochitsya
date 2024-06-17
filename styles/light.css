@@ -20,5 +20,18 @@
   --main-section-subtitle-color: #353430;
   --main-section-mintitle-color: #353430;
   --rec-text: "";
+
+  background-image: url('../images/cover-image-light.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+@media(prefers-color-scheme:light) {
+  .theme_auto.page {
+    background-image: url('../images/cover-image-light.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
