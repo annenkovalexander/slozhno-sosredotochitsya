@@ -41,6 +41,11 @@ button:focus {
   color: var(--menu-color);
 }
 
+.main {
+  background-color: transparent;
+  inline-size: 100%;
+}
+
 @container (width <= 375px) {
 
   .header {
@@ -187,11 +192,6 @@ button:focus {
     font-weight: 700;
     line-height: 23.4px;
     text-align: left;
-  }
-
-  .main {
-    background-color: var(--background-color);
-    inline-size: 100%;
   }
 
   .main__section {
@@ -455,8 +455,6 @@ button:focus {
 
   .main {
     display: block;
-    background-color: var(--background-color);
-    inline-size: 100%;
     margin-block-start: 40px;
     margin-block-end: 50px;
     padding-inline-start: 10px;
@@ -805,8 +803,6 @@ button:focus {
 
   .main {
     display: block;
-    background-color: var(--background-color);
-    inline-size: 100%;
     margin-block-start: 40px;
     margin-block-end: 50px;
     padding-inline-start: 10px;
